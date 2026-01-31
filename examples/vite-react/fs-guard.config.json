@@ -1,0 +1,64 @@
+{
+  "preset": "vite-react",
+  "rules": {
+    ".": {
+      "required": ["main.tsx", "App.tsx", "vite-env.d.ts"]
+    },
+    "components": {
+      "pattern": "*.tsx",
+      "maxDepth": 2
+    },
+    "components/ui": {
+      "required": ["button.tsx", "input.tsx", "modal.tsx", "toast.tsx"],
+      "pattern": "*.tsx"
+    },
+    "components/layout": {
+      "required": ["header.tsx", "sidebar.tsx", "main-layout.tsx"],
+      "pattern": "*.tsx"
+    },
+    "pages": {
+      "required": ["home.tsx", "login.tsx", "not-found.tsx"],
+      "pattern": "*.tsx"
+    },
+    "features": {
+      "maxDepth": 3
+    },
+    "features/auth": {
+      "required": ["login-form.tsx", "register-form.tsx"],
+      "pattern": "*.tsx"
+    },
+    "features/auth/hooks": {
+      "pattern": "use*.ts"
+    },
+    "hooks": {
+      "required": ["useAuth.ts", "useDebounce.ts"],
+      "pattern": "use*.ts"
+    },
+    "services": {
+      "required": ["api.ts", "http-client.ts"],
+      "pattern": "*.ts"
+    },
+    "routes": {
+      "required": ["index.tsx", "private-route.tsx"],
+      "pattern": "*.tsx"
+    },
+    "store": {
+      "required": ["index.ts"],
+      "pattern": "*.ts"
+    },
+    "store/slices": ["*.slice.ts"],
+    "types": {
+      "required": ["api.ts", "auth.ts", "env.d.ts"],
+      "pattern": "*.ts"
+    },
+    "utils": {
+      "required": ["format.ts", "cn.ts"],
+      "pattern": "*.ts",
+      "maxDepth": 1
+    },
+    "constants": ["*.ts"],
+    "assets/images": "*",
+    "assets/fonts": "*"
+  },
+  "ignore": ["node_modules", "dist", ".git", "public"]
+}

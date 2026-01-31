@@ -1,0 +1,54 @@
+{
+  "preset": "react-native-js",
+  "rules": {
+    "screens": {
+      "required": ["HomeScreen.jsx", "LoginScreen.jsx", "ProfileScreen.jsx"],
+      "pattern": "*Screen.jsx"
+    },
+    "components": {
+      "pattern": "*.jsx",
+      "maxDepth": 2
+    },
+    "components/ui": {
+      "required": ["Button.jsx", "Input.jsx", "Text.jsx", "Card.jsx"],
+      "pattern": "*.jsx"
+    },
+    "components/layout": {
+      "required": ["SafeArea.jsx", "Container.jsx"],
+      "pattern": "*.jsx"
+    },
+    "navigation": {
+      "required": ["RootNavigator.jsx", "AuthNavigator.jsx", "MainNavigator.jsx"],
+      "pattern": "*.jsx"
+    },
+    "hooks": {
+      "required": ["useAuth.js", "useStorage.js"],
+      "pattern": "use*.js"
+    },
+    "services": {
+      "required": ["api.js", "auth.service.js", "storage.service.js"],
+      "pattern": "*.js"
+    },
+    "store": {
+      "required": ["index.js"],
+      "pattern": "*.js"
+    },
+    "theme": {
+      "required": ["colors.js", "fonts.js", "spacing.js"],
+      "pattern": "*.js"
+    },
+    "utils": {
+      "required": ["format.js", "platform.js"],
+      "pattern": "*.js",
+      "maxDepth": 1
+    },
+    "constants": ["*.js"],
+    "contexts": {
+      "required": ["AuthContext.jsx"],
+      "pattern": "*.jsx"
+    },
+    "assets/images": "*",
+    "assets/fonts": "*"
+  },
+  "ignore": ["node_modules", ".git", "android", "ios", "__tests__", "coverage"]
+}

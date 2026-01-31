@@ -1,0 +1,64 @@
+{
+  "preset": "react-native-ts",
+  "rules": {
+    "screens": {
+      "required": ["HomeScreen.tsx", "LoginScreen.tsx", "ProfileScreen.tsx", "SettingsScreen.tsx"],
+      "pattern": "*Screen.tsx"
+    },
+    "components": {
+      "pattern": "*.tsx",
+      "maxDepth": 2
+    },
+    "components/ui": {
+      "required": ["Button.tsx", "Input.tsx", "Text.tsx", "Card.tsx"],
+      "pattern": "*.tsx"
+    },
+    "components/layout": {
+      "required": ["SafeArea.tsx", "Container.tsx", "Spacer.tsx"],
+      "pattern": "*.tsx"
+    },
+    "navigation": {
+      "required": ["RootNavigator.tsx", "AuthNavigator.tsx", "MainNavigator.tsx"],
+      "pattern": "*.tsx"
+    },
+    "navigation/types": {
+      "required": ["index.ts"],
+      "pattern": "*.ts"
+    },
+    "hooks": {
+      "required": ["useAuth.ts", "useStorage.ts", "useKeyboard.ts"],
+      "pattern": "use*.ts"
+    },
+    "services": {
+      "required": ["api.ts", "auth.service.ts", "storage.service.ts"],
+      "pattern": "*.ts"
+    },
+    "store": {
+      "required": ["index.ts"],
+      "pattern": "*.ts"
+    },
+    "store/slices": ["*.slice.ts"],
+    "theme": {
+      "required": ["colors.ts", "fonts.ts", "spacing.ts", "index.ts"],
+      "pattern": "*.ts"
+    },
+    "types": {
+      "required": ["api.ts", "navigation.ts"],
+      "pattern": "*.ts"
+    },
+    "utils": {
+      "required": ["format.ts", "platform.ts"],
+      "pattern": "*.ts",
+      "maxDepth": 1
+    },
+    "constants": ["*.ts"],
+    "contexts": {
+      "required": ["AuthContext.tsx"],
+      "pattern": "*.tsx"
+    },
+    "assets/images": "*",
+    "assets/fonts": "*",
+    "assets/animations": "*"
+  },
+  "ignore": ["node_modules", ".git", "android", "ios", "__tests__", "coverage"]
+}

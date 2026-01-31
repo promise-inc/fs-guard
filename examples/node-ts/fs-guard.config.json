@@ -1,0 +1,51 @@
+{
+  "preset": "node-ts",
+  "rules": {
+    ".": {
+      "required": ["index.ts", "app.ts", "server.ts"]
+    },
+    "config": {
+      "required": ["database.ts", "env.ts", "cors.ts"],
+      "pattern": "*.ts"
+    },
+    "routes": {
+      "required": ["index.ts"],
+      "pattern": "*.routes.ts"
+    },
+    "controllers": {
+      "required": ["auth.controller.ts", "users.controller.ts"],
+      "pattern": "*.controller.ts"
+    },
+    "services": {
+      "required": ["auth.service.ts", "users.service.ts", "email.service.ts"],
+      "pattern": "*.service.ts"
+    },
+    "middlewares": {
+      "required": ["auth.middleware.ts", "error-handler.middleware.ts", "rate-limit.middleware.ts"],
+      "pattern": "*.middleware.ts"
+    },
+    "validators": {
+      "required": ["auth.validator.ts"],
+      "pattern": "*.validator.ts"
+    },
+    "models": {
+      "required": ["user.model.ts"],
+      "pattern": "*.model.ts"
+    },
+    "types": {
+      "required": ["env.d.ts"],
+      "pattern": "*.ts"
+    },
+    "utils": {
+      "required": ["logger.ts", "hash.ts"],
+      "pattern": "*.ts",
+      "maxDepth": 1
+    },
+    "database": {
+      "required": ["connection.ts"],
+      "pattern": "*.ts"
+    },
+    "database/seeds": ["*.seed.ts"]
+  },
+  "ignore": ["node_modules", "dist", ".git", "coverage", "__tests__"]
+}

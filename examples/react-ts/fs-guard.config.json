@@ -1,0 +1,53 @@
+{
+  "preset": "react-ts",
+  "rules": {
+    ".": {
+      "required": ["App.tsx", "main.tsx"]
+    },
+    "components": {
+      "pattern": "*.tsx",
+      "maxDepth": 2
+    },
+    "components/ui": {
+      "required": ["button.tsx", "input.tsx", "modal.tsx"],
+      "pattern": "*.tsx"
+    },
+    "components/layout": {
+      "required": ["header.tsx", "sidebar.tsx", "footer.tsx"],
+      "pattern": "*.tsx"
+    },
+    "pages": {
+      "required": ["home.tsx", "login.tsx", "not-found.tsx"],
+      "pattern": "*.tsx"
+    },
+    "hooks": {
+      "required": ["useAuth.ts", "useLocalStorage.ts"],
+      "pattern": "use*.ts"
+    },
+    "services": {
+      "required": ["api.ts", "auth.service.ts"],
+      "pattern": "*.ts"
+    },
+    "contexts": {
+      "required": ["auth-context.tsx", "theme-context.tsx"],
+      "pattern": "*-context.tsx"
+    },
+    "utils": {
+      "required": ["format.ts", "validation.ts"],
+      "pattern": "*.ts",
+      "maxDepth": 1
+    },
+    "types": {
+      "required": ["api.ts", "auth.ts"],
+      "pattern": "*.ts"
+    },
+    "routes": {
+      "required": ["index.tsx"],
+      "pattern": "*.tsx"
+    },
+    "constants": ["*.ts"],
+    "assets/images": "*",
+    "assets/icons": "*"
+  },
+  "ignore": ["node_modules", "dist", "build", ".git", "coverage", "public"]
+}

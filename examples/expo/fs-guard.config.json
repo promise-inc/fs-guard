@@ -1,0 +1,67 @@
+{
+  "preset": "expo",
+  "rules": {
+    "screens": {
+      "required": ["HomeScreen.tsx", "LoginScreen.tsx", "ProfileScreen.tsx", "OnboardingScreen.tsx"],
+      "pattern": "*Screen.tsx"
+    },
+    "components": {
+      "pattern": "*.tsx",
+      "maxDepth": 2
+    },
+    "components/ui": {
+      "required": ["Button.tsx", "Input.tsx", "Text.tsx", "Avatar.tsx", "Card.tsx"],
+      "pattern": "*.tsx"
+    },
+    "components/layout": {
+      "required": ["SafeArea.tsx", "Container.tsx", "KeyboardAvoid.tsx"],
+      "pattern": "*.tsx"
+    },
+    "navigation": {
+      "required": ["RootNavigator.tsx", "AuthNavigator.tsx", "TabNavigator.tsx", "MainNavigator.tsx"],
+      "pattern": "*.tsx"
+    },
+    "navigation/linking": {
+      "required": ["config.ts"],
+      "pattern": "*.ts"
+    },
+    "hooks": {
+      "required": ["useAuth.ts", "useThemeColor.ts", "useCachedResources.ts", "useNotifications.ts"],
+      "pattern": "use*.ts"
+    },
+    "services": {
+      "required": ["api.ts", "auth.service.ts", "storage.service.ts", "notifications.service.ts"],
+      "pattern": "*.ts"
+    },
+    "store": {
+      "required": ["index.ts"],
+      "pattern": "*.ts"
+    },
+    "store/slices": ["*.slice.ts"],
+    "theme": {
+      "required": ["colors.ts", "fonts.ts", "spacing.ts", "index.ts"],
+      "pattern": "*.ts"
+    },
+    "types": {
+      "required": ["api.ts", "navigation.ts", "env.d.ts"],
+      "pattern": "*.ts"
+    },
+    "utils": {
+      "required": ["format.ts", "platform.ts", "haptics.ts"],
+      "pattern": "*.ts",
+      "maxDepth": 1
+    },
+    "constants": {
+      "required": ["layout.ts", "api.ts"],
+      "pattern": "*.ts"
+    },
+    "contexts": {
+      "required": ["AuthContext.tsx", "ThemeContext.tsx"],
+      "pattern": "*.tsx"
+    },
+    "assets/images": "*",
+    "assets/fonts": "*",
+    "assets/animations": "*"
+  },
+  "ignore": ["node_modules", ".git", ".expo", "__tests__", "coverage", "web-build"]
+}

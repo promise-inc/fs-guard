@@ -1,0 +1,43 @@
+{
+  "preset": "node-js",
+  "rules": {
+    ".": {
+      "required": ["index.js", "app.js", "server.js"]
+    },
+    "config": {
+      "required": ["database.js", "env.js"],
+      "pattern": "*.js"
+    },
+    "routes": {
+      "required": ["index.js"],
+      "pattern": "*.routes.js"
+    },
+    "controllers": {
+      "required": ["auth.controller.js", "users.controller.js"],
+      "pattern": "*.controller.js"
+    },
+    "services": {
+      "required": ["auth.service.js", "users.service.js"],
+      "pattern": "*.service.js"
+    },
+    "middlewares": {
+      "required": ["auth.middleware.js", "error-handler.middleware.js"],
+      "pattern": "*.middleware.js"
+    },
+    "models": {
+      "required": ["user.model.js"],
+      "pattern": "*.model.js"
+    },
+    "utils": {
+      "required": ["logger.js"],
+      "pattern": "*.js",
+      "maxDepth": 1
+    },
+    "database": {
+      "required": ["connection.js"],
+      "pattern": "*.js"
+    },
+    "database/seeds": ["*.seed.js"]
+  },
+  "ignore": ["node_modules", "dist", ".git", "coverage", "__tests__"]
+}

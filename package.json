@@ -1,0 +1,45 @@
+{
+  "name": "@promise-inc/fs-guard",
+  "version": "0.1.0",
+  "description": "Validate project folder and file structure. Enforce conventions in CI and locally.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "fs-guard": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "filesystem",
+    "structure",
+    "guard",
+    "validation",
+    "ci",
+    "convention",
+    "devtools",
+    "folder-structure"
+  ],
+  "homepage": "https://github.com/promise-inc/fs-guard#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/promise-inc/fs-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/promise-inc/fs-guard/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}

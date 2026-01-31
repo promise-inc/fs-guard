@@ -1,0 +1,55 @@
+{
+  "preset": "nestjs",
+  "rules": {
+    ".": {
+      "required": ["main.ts", "app.module.ts", "app.controller.ts", "app.service.ts"]
+    },
+    "config": {
+      "required": ["database.config.ts", "env.config.ts", "jwt.config.ts"],
+      "pattern": "*.config.ts"
+    },
+    "common/decorators": ["*.decorator.ts"],
+    "common/guards": {
+      "required": ["auth.guard.ts", "roles.guard.ts"],
+      "pattern": "*.guard.ts"
+    },
+    "common/interceptors": ["*.interceptor.ts"],
+    "common/filters": {
+      "required": ["http-exception.filter.ts"],
+      "pattern": "*.filter.ts"
+    },
+    "common/pipes": ["*.pipe.ts"],
+    "common/dto": ["*.dto.ts"],
+    "common/interfaces": ["*.interface.ts"],
+    "modules/auth": {
+      "required": ["auth.module.ts", "auth.controller.ts", "auth.service.ts"],
+      "maxDepth": 2
+    },
+    "modules/auth/dto": {
+      "required": ["login.dto.ts", "register.dto.ts"],
+      "pattern": "*.dto.ts"
+    },
+    "modules/auth/strategies": {
+      "required": ["jwt.strategy.ts"],
+      "pattern": "*.strategy.ts"
+    },
+    "modules/users": {
+      "required": ["users.module.ts", "users.controller.ts", "users.service.ts"],
+      "maxDepth": 2
+    },
+    "modules/users/dto": {
+      "required": ["create-user.dto.ts", "update-user.dto.ts"],
+      "pattern": "*.dto.ts"
+    },
+    "modules/users/entities": {
+      "required": ["user.entity.ts"],
+      "pattern": "*.entity.ts"
+    },
+    "database": {
+      "required": ["prisma.service.ts"],
+      "pattern": "*.ts"
+    },
+    "database/migrations": "*"
+  },
+  "ignore": ["node_modules", "dist", ".git", "test", "coverage"]
+}

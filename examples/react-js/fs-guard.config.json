@@ -1,0 +1,49 @@
+{
+  "preset": "react-js",
+  "rules": {
+    ".": {
+      "required": ["App.jsx", "index.jsx"]
+    },
+    "components": {
+      "pattern": "*.jsx",
+      "maxDepth": 2
+    },
+    "components/ui": {
+      "required": ["Button.jsx", "Input.jsx", "Modal.jsx"],
+      "pattern": "*.jsx"
+    },
+    "components/layout": {
+      "required": ["Header.jsx", "Sidebar.jsx", "Footer.jsx"],
+      "pattern": "*.jsx"
+    },
+    "pages": {
+      "required": ["Home.jsx", "Login.jsx", "NotFound.jsx"],
+      "pattern": "*.jsx"
+    },
+    "hooks": {
+      "required": ["useAuth.js", "useLocalStorage.js"],
+      "pattern": "use*.js"
+    },
+    "services": {
+      "required": ["api.js", "auth.service.js"],
+      "pattern": "*.js"
+    },
+    "contexts": {
+      "required": ["AuthContext.jsx", "ThemeContext.jsx"],
+      "pattern": "*.jsx"
+    },
+    "utils": {
+      "required": ["format.js", "validation.js"],
+      "pattern": "*.js",
+      "maxDepth": 1
+    },
+    "routes": {
+      "required": ["index.jsx"],
+      "pattern": "*.jsx"
+    },
+    "constants": ["*.js"],
+    "assets/images": "*",
+    "assets/icons": "*"
+  },
+  "ignore": ["node_modules", "dist", "build", ".git", "coverage", "public"]
+}

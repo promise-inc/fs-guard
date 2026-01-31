@@ -1,0 +1,60 @@
+{
+  "preset": "nextjs",
+  "rules": {
+    "app": {
+      "required": ["layout.tsx", "page.tsx", "loading.tsx", "error.tsx", "not-found.tsx"]
+    },
+    "app/api": "*",
+    "app/api/auth": {
+      "required": ["route.ts"],
+      "pattern": "*.ts"
+    },
+    "app/api/users": {
+      "required": ["route.ts"],
+      "pattern": "*.ts"
+    },
+    "app/(auth)/login": {
+      "required": ["page.tsx"]
+    },
+    "app/(auth)/register": {
+      "required": ["page.tsx"]
+    },
+    "app/dashboard": {
+      "required": ["page.tsx", "layout.tsx", "loading.tsx"]
+    },
+    "app/dashboard/settings": {
+      "required": ["page.tsx"]
+    },
+    "components": {
+      "pattern": "*.tsx",
+      "maxDepth": 2
+    },
+    "components/ui": {
+      "required": ["button.tsx", "input.tsx", "dialog.tsx", "card.tsx"],
+      "pattern": "*.tsx"
+    },
+    "components/forms": ["*.tsx"],
+    "hooks": {
+      "required": ["useAuth.ts"],
+      "pattern": "use*.ts"
+    },
+    "services": {
+      "required": ["api.ts"],
+      "pattern": "*.ts"
+    },
+    "lib": {
+      "required": ["auth.ts", "prisma.ts", "utils.ts"],
+      "pattern": "*.ts"
+    },
+    "types": {
+      "required": ["api.ts"],
+      "pattern": "*.ts"
+    },
+    "middleware": {
+      "pattern": "*.ts"
+    },
+    "utils": ["*.ts"],
+    "constants": ["*.ts"]
+  },
+  "ignore": ["node_modules", ".next", ".git", "public", "prisma"]
+}
