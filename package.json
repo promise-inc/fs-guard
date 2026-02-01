@@ -1,6 +1,6 @@
 {
   "name": "@promise-inc/fs-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Validate project folder and file structure. Enforce conventions in CI and locally.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
