@@ -14,15 +14,21 @@
   },
   "keywords": [
     "filesystem",
+    "folder-structure",
+    "file-structure",
     "structure",
     "guard",
     "validation",
     "ci",
     "convention",
+    "naming-convention",
+    "preset",
     "devtools",
-    "folder-structure"
+    "developer-tools",
+    "promise-inc",
+    "open-source"
   ],
-  "homepage": "https://github.com/promise-inc/fs-guard#readme",
+  "homepage": "https://promise.codes/open-source/fs-guard",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/promise-inc/fs-guard.git"

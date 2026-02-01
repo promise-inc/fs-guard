@@ -180,18 +180,28 @@ console.log(result.checked);     // string[]
 - **Fast** — Direct filesystem checks, no AST parsing
 - **Simple** — Solve one problem well
 
+## How to report bugs
+
+To report a bug, please first read our guide on [opening issues](https://github.com/promise-inc/fs-guard/issues).
+
+## How to contribute code
+
+To open a pull request, please first read our guide on [opening pull requests](https://github.com/promise-inc/fs-guard/pulls), which outlines our process for RFCs and pull requests.
+
 ## Also by Promise Inc.
 
 | Package | Description |
 |---------|-------------|
-| [`@promise-inc/ai-guard`](https://www.npmjs.com/package/@promise-inc/ai-guard) | Detect AI-generated code patterns |
-| [`@promise-inc/devlog`](https://www.npmjs.com/package/@promise-inc/devlog) | Logger with automatic context |
-| [`@promise-inc/ui-states`](https://www.npmjs.com/package/@promise-inc/ui-states) | Auto-skeleton from real DOM |
-
-## License
-
-MIT
+| [`@promise-inc/ai-guard`](https://github.com/promise-inc/ai-guard) | Detect AI-generated code patterns |
+| [`@promise-inc/ps-guard`](https://github.com/promise-inc/ps-guard) | Lighthouse-based performance guard |
+| [`@promise-inc/devlog`](https://github.com/promise-inc/devlog) | Logger with automatic context (file + line) |
+| [`@promise-inc/ui-states`](https://github.com/promise-inc/ui-states) | Auto-generated skeleton loading states |
+| [`@promise-inc/dev-reel`](https://github.com/promise-inc/dev-reel) | Animated SVG previews for READMEs |
 
 ---
 
 Developed by [Promise Inc.](https://promise.codes)
+
+## License
+
+MIT © [Promise Inc.](https://promise.codes)
